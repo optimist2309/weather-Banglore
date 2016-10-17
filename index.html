@@ -17,7 +17,7 @@
 	<body>
 		<script>
 		var url = 'https://query.yahooapis.com/v1/public/yql';
-		var yql = 'select title, units.temperature, item.forecast from weather.forecast where woeid in (select woeid from geo.places where text="Bengaluru, India") and u = "C" limit 7 | sort(field="item.forecast.date", descending="false");';
+		var yql = 'select title, units.temperature, item.forecast from weather.forecast where woeid in (select woeid from geo.places where text="Bengaluru, India") and u = "C" limit 3 | sort(field="item.forecast.date", descending="false");';
 		
 		var iconUrl = 'https://s.yimg.com/zz/combo?a/i/us/we/52/';
 		
